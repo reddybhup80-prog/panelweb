@@ -391,6 +391,7 @@ button, input, select, textarea { font-family: inherit; }
   color: var(--text-muted); font-size: 1.4rem; cursor: pointer;
   display: grid; place-items: center;
   transition: all var(--transition);
+  z-index: 10;
 }
 .modal-close:hover { background: rgba(255,255,255,0.12); color: var(--text); }
 .modal-badge {
@@ -402,19 +403,31 @@ button, input, select, textarea { font-family: inherit; }
   margin-bottom: 1rem;
 }
 .modal-card h2 { font-size: 1.6rem; margin-bottom: 0.4rem; }
-.modal-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.modal-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.3rem; }
 .modal-highlights {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;
-  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.4rem;
+  width: 100%;
 }
 .highlight {
-  display: flex; align-items: center; gap: 0.4rem;
-  font-size: 0.8rem; color: var(--text-muted);
-  background: var(--bg-glass); padding: 0.35rem 0.75rem;
-  border-radius: 50px; border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.55rem 1rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 215, 0, 0.22);
+  width: 100%;
+  box-sizing: border-box;
 }
-.highlight i { color: var(--gold); }
-.modal-cta-text { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; }
+.highlight i { color: var(--gold); font-size: 0.9rem; }
+.modal-cta-text { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.1rem; }
 .modal-actions {
   display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 0.5rem;
 }
