@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReddyPanel.in | Premium B2B & B2C White Label iGaming Platform</title>
+  <meta name="description"
+    content="Asia's leading B2B & B2C white-label gaming platform provider. Launch your own branded exchange with minimum sharing starting from 7%. Fully automated, custom domain & logo on ReddyPanel.in." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Animated Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- Welcome Modal -->
+  <div id="welcomeModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+      <div class="modal-logo-wrap">
+        <img src="assets/logo.png" alt="ReddyPanel Official Logo" class="modal-logo-img" />
+      </div>
+      <div class="modal-badge">REDDYPANEL.IN • SINCE 2012</div>
+      <h2>Welcome to <span class="gold">ReddyPanel</span></h2>
+      <p class="modal-sub">Asia's Best B2B & B2C Gaming Platform Provider</p>
+      <div class="modal-highlights">
+        <div class="highlight"><i class="fas fa-bolt"></i> Fully Automated</div>
+        <div class="highlight"><i class="fas fa-palette"></i> Your Domain & Logo</div>
+        <div class="highlight"><i class="fas fa-percentage"></i> From 7% Min Sharing</div>
+      </div>
+      <p class="modal-cta-text">Select your favorite brands and request on WhatsApp</p>
+      <div class="modal-actions">
+        <a href="#sites" class="btn btn-primary" id="modalExploreBtn">
+          <i class="fas fa-th-large"></i> Explore Brand Links
+        </a>
+        <a href="https://wa.me/17788260166?text=Hello%20ReddyPanel!%20I%20want%20to%20start%20my%20own%20White%20Label%20Gaming%20Exchange.%20Please%20guide%20me."
+          target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp (+1 7788260166)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <img src="assets/logo.png" alt="ReddyPanel Logo" class="brand-logo-img" />
+        <span class="logo-text">REDDY<span>PANEL</span>.IN</span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav" id="nav">
+        <!-- Search Bar inside Mobile Dropdown -->
+        <div class="mobile-nav-search">
+          <i class="fas fa-search"></i>
+          <input type="text" id="mobileNavSearch" placeholder="Search 30 brands (e.g. reddybook, lotus, sportplay)..." autocomplete="off" />
+        </div>
+
+        <div class="nav-links-wrap">
+          <a href="#vip-portals" class="nav-vip-link"><i class="fas fa-crown"></i> VIP Portals</a>
+          <a href="#sites"><i class="fas fa-layer-group"></i> Brands</a>
+          <a href="#inquiry"><i class="fab fa-whatsapp"></i> Order</a>
+          <a href="#features"><i class="fas fa-gem"></i> Features</a>
+          <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+          <a href="#contact"><i class="fas fa-headset"></i> Contact</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="siteSearch" placeholder="Search brands..." autocomplete="off" />
+        </div>
+        <a href="#inquiry" class="btn btn-sm btn-select-counter" id="headerCounterBtn" title="Selected brands">
+          <i class="fas fa-check-square"></i> <span id="headerSelectedCount">0</span><span class="counter-label">&nbsp;Selected</span>
+        </a>
+        <a href="https://wa.me/17788260166?text=Hello%20ReddyPanel%20Team!%20I%20am%20interested%20in%20getting%20a%20White%20Label%20Panel.%20Please%20share%20available%20brands%20and%20rates."
+          target="_blank" class="btn btn-sm btn-whatsapp header-wa-btn" title="WhatsApp +1 7788260166">
+          <i class="fab fa-whatsapp"></i> <span class="wa-btn-label">WhatsApp</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay for tap-to-close -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-crest-badge">
+        <img src="assets/logo.png" alt="Reddy Panel Official Crest" class="hero-crest-img" />
+      </div>
+      <div class="hero-badge">Asia's #1 White Label Platform • ReddyPanel.in</div>
+      <h1>
+        <span class="line">B2B & B2C</span>
+        <span class="line gold">White Labels</span>
+        <span class="line">One Stop Solution</span>
+      </h1>
+      <p class="hero-desc">
+        Launch your fully automated gaming exchange with custom domain, branding & logo.
+        Sharing rates start from just <strong>7%</strong>. Super Admin • Admin • Master • Agent hierarchy ready.
+      </p>
+      <div class="hero-cta">
+        <a href="#sites" class="btn btn-primary btn-lg">
+          <i class="fas fa-layer-group"></i> Select White Label Brands
+        </a>
+        <a href="#inquiry" class="btn btn-outline btn-lg">
+          <i class="fab fa-whatsapp"></i> Send WhatsApp Inquiry
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="1000">0</span>+
+          <span class="stat-label">Platforms Launched</span>
+        </div>
+        <div class="stat">
+          <span class="stat-text">7%</span>
+          <span class="stat-label">Min Sharing Rate</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="24">0</span>/7
+          <span class="stat-label">WhatsApp Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flowing Ticker / Continuous Moving Disclaimer Strip (Directly Below Hero Stats) -->
+  <div class="disclaimer-ticker-wrap">
+    <div class="ticker-track">
+      <div class="ticker-item">
+        <span class="ticker-badge"><i class="fas fa-info-circle gold"></i> Important Business Disclaimer :-</span>
+        <span class="ticker-text"><strong>ReddyPanel.in</strong> — This website is for general information purposes
+          only. It does not provide or promote online gambling. Our services are intended for iGaming business operators
+          only.</span>
+        <span class="ticker-bonus"><i class="fas fa-gift"></i> Welcome Bonus Available</span>
+        <span class="ticker-sep"><i class="fas fa-certificate gold"></i></span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge"><i class="fas fa-info-circle gold"></i> Important Business Disclaimer :-</span>
+        <span class="ticker-text"><strong>ReddyPanel.in</strong> — This website is for general information purposes
+          only. It does not provide or promote online gambling. Our services are intended for iGaming business operators
+          only.</span>
+        <span class="ticker-bonus"><i class="fas fa-gift"></i> Welcome Bonus Available</span>
+        <span class="ticker-sep"><i class="fas fa-certificate gold"></i></span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge"><i class="fas fa-info-circle gold"></i> Important Business Disclaimer :-</span>
+        <span class="ticker-text"><strong>ReddyPanel.in</strong> — This website is for general information purposes
+          only. It does not provide or promote online gambling. Our services are intended for iGaming business operators
+          only.</span>
+        <span class="ticker-bonus"><i class="fas fa-gift"></i> Welcome Bonus Available</span>
+        <span class="ticker-sep"><i class="fas fa-certificate gold"></i></span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge"><i class="fas fa-info-circle gold"></i> Important Business Disclaimer :-</span>
+        <span class="ticker-text"><strong>ReddyPanel.in</strong> — This website is for general information purposes
+          only. It does not provide or promote online gambling. Our services are intended for iGaming business operators
+          only.</span>
+        <span class="ticker-bonus"><i class="fas fa-gift"></i> Welcome Bonus Available</span>
+        <span class="ticker-sep"><i class="fas fa-certificate gold"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exclusive VIP Direct Access Portals Section -->
+  <section class="vip-portals-section" id="vip-portals">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag"><i class="fas fa-crown"></i> Exclusive VIP Direct Access</div>
+        <h2>Special <span class="gold">Admin & Agent</span> Portals</h2>
+        <p>Verified master and agent level access links with 7% minimum sharing. Real-time automated payment, deposit/withdrawal approval & player management engine.</p>
+      </div>
+
+      <!-- Main Showcase Card with Uploaded Payment Overview Dashboard Screenshot & the 2 Specific Links -->
+      <div class="vip-portal-card flagship-card">
+        <div class="flagship-layout">
+          <!-- Left: Authentic Payment Overview Screenshot Frame -->
+          <div class="flagship-screenshot-wrap">
+            <div class="screenshot-device-frame">
+              <div class="screenshot-device-header">
+                <span class="device-dot red"></span>
+                <span class="device-dot yellow"></span>
+                <span class="device-dot green"></span>
+                <span class="device-title">Live Admin & Payment Engine</span>
+              </div>
+              <div class="screenshot-img-box">
+                <img src="assets/payment_overview.jpg" alt="Payment Overview - Live Admin & Settlement Engine" class="flagship-screenshot-img" />
+                <a href="assets/payment_overview.jpg" target="_blank" class="screenshot-expand-btn" title="View Full High-Res Screenshot">
+                  <i class="fas fa-expand-alt"></i> Full View
+                </a>
+              </div>
+              <div class="screenshot-device-footer">
+                <span class="vip-status-dot"></span> Real-time Deposit & Withdrawal Tracker
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: The 2 Specific Links -->
+          <div class="flagship-details-wrap">
+            <div class="vip-card-header">
+              <span class="vip-card-badge flagship-badge"><i class="fas fa-bolt"></i> 2 Special VIP Access Portals</span>
+              <span class="vip-card-status"><span class="vip-status-dot"></span> Active Live Portals • 7% Min Sharing</span>
+            </div>
+
+            <!-- Portal 1: Lotus Plays 365 Agent Portal -->
+            <div class="vip-portal-item-block">
+              <div class="vip-item-head">
+                <div class="vip-item-title-wrap">
+                  <span class="vip-card-badge"><i class="fas fa-bolt"></i> Link 1 • VIP Agent Portal</span>
+                  <h3 class="vip-item-title">LOTUS PLAYS <span>365</span></h3>
+                </div>
+                <div class="vip-portal-url-box">
+                  <span class="vip-portal-url">https://ag.lotusplays365.com</span>
+                  <button type="button" class="btn btn-sm btn-secondary btn-copy-portal" data-url="https://ag.lotusplays365.com" title="Copy Link">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+              <p class="vip-item-desc">
+                Dedicated Agent level exchange portal. Live cricket exchange odds, instant match settlement, player ledger, and real-time payment tracking.
+              </p>
+              <div class="vip-item-actions">
+                <a href="https://ag.lotusplays365.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Direct Portal Login
+                </a>
+                <a href="https://wa.me/17788260166?text=Hello%20ReddyPanel%20Team!%20I%20want%20to%20get%20instant%20Agent%2FMaster%20ID%20for%20Lotus%20Plays%20365%20(https%3A%2F%2Fag.lotusplays365.com).%20Please%20provide%20rates%20and%20demo%20login."
+                  target="_blank" class="btn btn-whatsapp">
+                  <i class="fab fa-whatsapp"></i> Request Agent ID
+                </a>
+              </div>
+            </div>
+
+            <!-- Portal 2: Sport Play 99 Admin Portal -->
+            <div class="vip-portal-item-block">
+              <div class="vip-item-head">
+                <div class="vip-item-title-wrap">
+                  <span class="vip-card-badge"><i class="fas fa-crown"></i> Link 2 • VIP Admin Portal</span>
+                  <h3 class="vip-item-title">SPORT PLAY <span>99</span></h3>
+                </div>
+                <div class="vip-portal-url-box">
+                  <span class="vip-portal-url">https://admin.sportplay99.win</span>
+                  <button type="button" class="btn btn-sm btn-secondary btn-copy-portal" data-url="https://admin.sportplay99.win" title="Copy Link">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+              <p class="vip-item-desc">
+                Super Admin & Master control panel with live Payment Overview (Deposits & Withdrawals), automated UPI/Crypto gateways, KPI analytics, and advanced risk monitors.
+              </p>
+              <div class="vip-item-actions">
+                <a href="https://admin.sportplay99.win" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Direct Admin Login
+                </a>
+                <a href="https://wa.me/17788260166?text=Hello%20ReddyPanel%20Team!%20I%20want%20to%20get%20instant%20Admin%2FMaster%20Panel%20Access%20for%20Sport%20Play%2099%20(https%3A%2F%2Fadmin.sportplay99.win).%20Please%20provide%20rates%20and%20demo%20login."
+                  target="_blank" class="btn btn-whatsapp">
+                  <i class="fab fa-whatsapp"></i> Request Admin ID
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sites Section -->
+  <section class="sites-section" id="sites">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Curated Links System</div>
+        <h2>Available <span class="gold">White Label</span> Brands</h2>
+        <p>Browse all distinct brands. Select multiple links below to generate a tailored WhatsApp inquiry.</p>
+      </div>
+
+      <div class="filter-bar">
+        <!-- Prominent Search Bar directly in Brands Section (Visible on all devices) -->
+        <div class="section-search-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" id="sectionSiteSearch" placeholder="Search from 29 brands (e.g. lotus, sportplay, 1xm, diamond)..." autocomplete="off" />
+          <button type="button" class="search-clear-btn" id="sectionSearchClear" title="Clear Search" aria-label="Clear Search" hidden>&times;</button>
+        </div>
+
+        <div class="filter-controls-wrap">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Brands (29)</button>
+            <button class="filter-btn" data-filter="low">≤ 10%</button>
+            <button class="filter-btn" data-filter="mid">11% – 15%</button>
+            <button class="filter-btn" data-filter="high">16%+</button>
+          </div>
+
+          <div class="action-group">
+            <button class="btn btn-sm btn-secondary" id="selectAllBtn">
+              <i class="fas fa-check-double"></i> Select All
+            </button>
+            <button class="btn btn-sm btn-secondary" id="clearSelectionBtn">
+              <i class="fas fa-times"></i> Clear Selection
+            </button>
+            <div class="sort-wrap">
+              <label for="sortSelect">Sort:</label>
+              <select id="sortSelect">
+                <option value="name">Name (A-Z)</option>
+                <option value="share-asc">Sharing (Low → High)</option>
+                <option value="share-desc">Sharing (High → Low)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sites-grid" id="sitesGrid">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="no-results" id="noResults" hidden>
+        <i class="fas fa-search"></i>
+        <p>No brands match your search query.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Inquiry & Order Section -->
+  <section class="inquiry-section" id="inquiry">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">WhatsApp Request System</div>
+        <h2>Send <span class="gold">WhatsApp</span> Inquiry</h2>
+        <p>Review your selected brands, customize your request details, and send directly to our WhatsApp support team
+          (+1 7788260166).</p>
+      </div>
+
+      <div class="inquiry-grid">
+        <!-- Form Column -->
+        <div class="inquiry-form-card">
+          <div class="form-header">
+            <h3><i class="fab fa-whatsapp gold"></i> Inquiry Details</h3>
+            <span class="selection-pill"><span id="formSelectedCount">0</span> Brands Selected</span>
+          </div>
+
+          <!-- Selected Brands Container -->
+          <div class="selected-brands-wrap">
+            <div class="selected-header">
+              <label>Selected Brands & Links:</label>
+              <button type="button" class="btn-text" id="clearChipsBtn">Remove All</button>
+            </div>
+            <div class="selected-chips" id="selectedChips">
+              <!-- Chips injected by JS -->
+            </div>
+            <div class="chips-empty" id="chipsEmpty">
+              <i class="fas fa-mouse-pointer"></i>
+              <span>No brands selected yet. Click any brand card above to add it here, or enter custom below.</span>
+            </div>
+
+            <!-- Manual Add Link / Brand -->
+            <div class="manual-add-row">
+              <input type="text" id="customBrandInput" placeholder="Add custom brand/link name..." />
+              <button type="button" class="btn btn-sm btn-primary" id="addCustomBrandBtn">
+                <i class="fas fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+
+          <!-- Inquiry Form Fields -->
+          <form id="whatsappInquiryForm" class="inquiry-form" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="userName">Your Name / Company (Optional)</label>
+                <input type="text" id="userName" placeholder="e.g. Rahul Sharma" />
+              </div>
+              <div class="form-group">
+                <label for="userPhone">Your Phone / WhatsApp (Optional)</label>
+                <input type="tel" id="userPhone" placeholder="e.g. +1 7788260166" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="panelRole">Panel Role / Hierarchy Required</label>
+                <select id="panelRole">
+                  <option value="Super Admin Panel">Super Admin Panel</option>
+                  <option value="Admin Panel">Admin Panel</option>
+                  <option value="Super Master Panel">Super Master Panel</option>
+                  <option value="Master Panel">Master Panel</option>
+                  <option value="Agent Panel">Agent Panel</option>
+                  <option value="Complete White Label Setup">Complete White Label Setup</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="targetShare">Target Sharing Rate</label>
+                <select id="targetShare">
+                  <option value="Lowest Available (7% - 10%)">Lowest Available (7% - 10%)</option>
+                  <option value="11% - 15% Sharing">11% - 15% Sharing</option>
+                  <option value="16%+ White Label Setup">16%+ White Label Setup</option>
+                  <option value="Bulk Volume / Custom Deal" selected>Bulk Volume / Custom Deal</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fas fa-tasks gold"></i> Functions & Capabilities Required:</label>
+              <div class="functions-list" id="functionsList">
+                <label class="function-row active">
+                  <input type="checkbox" name="functions" value="Sports Betting & Cricket Exchange" checked />
+                  <span class="custom-checkbox"><i class="fas fa-check"></i></span>
+                  <span class="function-text">Sports Betting & Cricket Exchange</span>
+                </label>
+                <label class="function-row active">
+                  <input type="checkbox" name="functions" value="Live Casino & Virtual Games" checked />
+                  <span class="custom-checkbox"><i class="fas fa-check"></i></span>
+                  <span class="function-text">Live Casino & Virtual Games</span>
+                </label>
+                <label class="function-row active">
+                  <input type="checkbox" name="functions" value="Auto Payment Gateway (UPI / QR / Crypto)" checked />
+                  <span class="custom-checkbox"><i class="fas fa-check"></i></span>
+                  <span class="function-text">Auto Payment Gateway (UPI / QR / Crypto)</span>
+                </label>
+                <label class="function-row active">
+                  <input type="checkbox" name="functions" value="Custom Domain & Branding Setup" checked />
+                  <span class="custom-checkbox"><i class="fas fa-check"></i></span>
+                  <span class="function-text">Custom Domain & Branding Setup</span>
+                </label>
+                <label class="function-row active">
+                  <input type="checkbox" name="functions" value="Instant Demo ID & Testing Access" checked />
+                  <span class="custom-checkbox"><i class="fas fa-check"></i></span>
+                  <span class="function-text">Instant Demo ID & Testing Access</span>
+                </label>
+                <label class="function-row active">
+                  <input type="checkbox" name="functions" value="24/7 Technical Support & Risk Management" checked />
+                  <span class="custom-checkbox"><i class="fas fa-check"></i></span>
+                  <span class="function-text">24/7 Technical Support & Risk Management</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage">Additional Requirements / Notes</label>
+              <textarea id="userMessage" rows="3"
+                placeholder="Please provide pricing, demo logins, and setup procedure for these brands..."></textarea>
+            </div>
+
+            <button type="button" class="btn btn-whatsapp btn-lg btn-full" id="sendWhatsAppBtn">
+              <i class="fab fa-whatsapp"></i> Send to WhatsApp (+1 7788260166)
+            </button>
+          </form>
+        </div>
+
+        <!-- Live Preview Column -->
+        <div class="inquiry-preview-card">
+          <div class="preview-header">
+            <div class="preview-badge"><i class="fas fa-comments"></i> Live WhatsApp Chat Preview</div>
+            <div class="wa-status"><span class="status-dot"></span> Ready to send</div>
+          </div>
+          <div class="whatsapp-chat-bubble">
+            <div class="bubble-header">
+              <div class="bubble-header-user">
+                <div class="bubble-avatar-img-wrap">
+                  <img src="assets/logo.png" alt="ReddyPanel" class="bubble-avatar-img" />
+                </div>
+                <div>
+                  <div class="bubble-title">ReddyPanel Support</div>
+                  <div class="bubble-subtitle">+1 7788260166 • Online</div>
+                </div>
+              </div>
+            </div>
+            <div class="bubble-content" id="messagePreview">
+              <!-- Rendered Rich Message Preview Injected by JS -->
+            </div>
+            <div class="bubble-footer">
+              <span id="previewTime">Just now</span>
+              <span class="ticks"><i class="fas fa-check-double"></i></span>
+            </div>
+          </div>
+          <div class="preview-cta">
+            <p><i class="fab fa-whatsapp gold"></i> Direct chat with official ReddyPanel team on <strong>+1 7788260166</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Selection Action Bar -->
+  <div class="floating-action-bar" id="floatingActionBar">
+    <div class="container fab-inner">
+      <div class="fab-info">
+        <span class="fab-badge"><span id="fabCount">0</span> Brands Selected</span>
+        <span class="fab-preview-names" id="fabPreviewNames">No brands selected</span>
+      </div>
+      <div class="fab-actions">
+        <button class="btn btn-sm btn-secondary" id="fabClearBtn">Clear</button>
+        <a href="#inquiry" class="btn btn-sm btn-outline">Edit Form</a>
+        <button class="btn btn-sm btn-whatsapp" id="fabSendBtn">
+          <i class="fab fa-whatsapp"></i> Send on WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Enterprise Capabilities</div>
+        <h2>Why Choose <span class="gold">ReddyPanel.in</span></h2>
+        <p>Everything you need to launch and scale your iGaming business.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Fully Automated</h3>
+          <p>Complete hierarchy: Super Admin → Admin → Super Master → Master → Agent. Zero manual work.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Your Brand</h3>
+          <p>Custom domain, logo, colors and complete white-label experience for your clients.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-percentage"></i></div>
+          <h3>Lowest Minimum Sharing</h3>
+          <p>Industry lowest sharing rates starting from just 7%. Maximize your gross margins.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile Ready</h3>
+          <p>Responsive panels that work flawlessly on desktop, tablet and mobile devices.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Secure & Stable</h3>
+          <p>Enterprise-grade security, DDoS protection and 99.9% uptime infrastructure.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
+          <h3>24/7 WhatsApp & Mobile Support</h3>
+          <p>Dedicated helpline directly on WhatsApp & Mobile (+1 7788260166) for instant assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-content">
+        <div class="badge-tag">Industry Leaders</div>
+        <h2>Leading <span class="gold">iGaming</span> Solutions</h2>
+        <p>
+          ReddyPanel.in stands at the forefront of iGaming platform development, delivering cutting-edge
+          white-label casino solutions and comprehensive sports betting technology.
+        </p>
+        <p>
+          With over 1000+ successfully launched gaming platforms, we specialize in complete iGaming
+          portfolio solutions including secure payment gateways, advanced analytics and scalable architecture.
+        </p>
+        <ul class="about-list">
+          <li><i class="fas fa-check"></i> Sports Betting & Exchange</li>
+          <li><i class="fas fa-check"></i> Live Casino Integration</li>
+          <li><i class="fas fa-check"></i> Cryptocurrency Ready</li>
+          <li><i class="fas fa-check"></i> Multi-currency Support</li>
+        </ul>
+        <a href="#inquiry" class="btn btn-primary">
+          <i class="fab fa-whatsapp"></i> Request Selected Panels
+        </a>
+      </div>
+      <div class="about-visual">
+        <div class="visual-card">
+          <div class="role"><i class="fas fa-user-shield"></i> Super Admin</div>
+          <div class="role"><i class="fas fa-user-cog"></i> Admin</div>
+          <div class="role"><i class="fas fa-user-tie"></i> Super Master</div>
+          <div class="role"><i class="fas fa-user"></i> Master</div>
+          <div class="role"><i class="fas fa-user-friends"></i> Agent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-logo-wrap">
+          <img src="assets/logo.png" alt="ReddyPanel Official Logo" class="cta-logo-img" />
+        </div>
+        <h2>Ready to Launch Your Own Panel?</h2>
+        <p>Book chalain, paisa kamain. Apna white label banwain aaj hi with lowest sharing starting from 7%.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/17788260166?text=Hi%20ReddyPanel%20Team!%20I%20am%20ready%20to%20launch%20my%20own%20panel.%20Please%20provide%20instant%20setup%20details%20and%20demo%20ID."
+            target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> WhatsApp: +1 7788260166
+          </a>
+          <a href="tel:+17788260166" class="btn btn-primary btn-lg">
+            <i class="fas fa-phone-alt"></i> Mobile Call: +1 7788260166
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="assets/logo.png" alt="ReddyPanel Logo" class="footer-logo-img" />
+            <span class="logo-text">REDDY<span>PANEL</span>.IN</span>
+          </a>
+          <p>Your one-stop solution for B2B & B2C white-label gaming platforms with lowest sharing starting from 7%.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home"><i class="fas fa-angle-right"></i> Home</a>
+          <a href="#vip-portals"><i class="fas fa-crown"></i> VIP Portals</a>
+          <a href="#sites"><i class="fas fa-layer-group"></i> Brands & Links</a>
+          <a href="#inquiry"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+          <a href="#features"><i class="fas fa-gem"></i> Features</a>
+          <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+        </div>
+        <div class="footer-links">
+          <h4>Exclusive Portals</h4>
+          <a href="https://ag.lotusplays365.com" target="_blank" rel="noopener noreferrer" class="gold">
+            <i class="fas fa-bolt"></i> Lotus Plays 365 (Agent)
+          </a>
+          <a href="https://admin.sportplay99.win" target="_blank" rel="noopener noreferrer" class="gold">
+            <i class="fas fa-crown"></i> Sport Play 99 (Admin)
+          </a>
+          <a href="#vip-portals">
+            <i class="fas fa-shield-alt"></i> View VIP Direct Access
+          </a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact & 24/7 Support</h4>
+          <div class="footer-support-card">
+            <div class="footer-support-item">
+              <i class="fab fa-whatsapp gold"></i>
+              <div>
+                <a href="https://wa.me/17788260166?text=Hello%20ReddyPanel%20Support!%20I%20have%20an%20inquiry%20regarding%20panel%20pricing%20and%20brand%20links."
+                  target="_blank">+1 7788260166</a>
+              </div>
+            </div>
+            <div class="footer-support-item">
+              <i class="fas fa-phone-alt gold"></i>
+              <div>
+                <a href="tel:+17788260166">+1 7788260166</a>
+              </div>
+            </div>
+          </div>
+          <p class="support-hint">Available 24/7 for instant panel setup, demo logins & mobile support.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">
+          <strong>Important Business Disclaimer:</strong> Reddypanel.in is for general information purposes only.
+          It does not provide or promote online gambling. Our services are intended for iGaming business operators only.
+        </p>
+        <p class="copyright">© 2026 ReddyPanel.in. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/17788260166?text=Hello%20ReddyPanel!%20I%20need%20quick%20assistance%20and%20inquiry%20regarding%20White%20Label%20Panels."
+    target="_blank" class="float-wa" aria-label="WhatsApp (+1 7788260166)" title="WhatsApp +1 7788260166">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
