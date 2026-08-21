@@ -2125,7 +2125,7 @@ const DEFAULT_SITES = [
   {
     "name": "LOTUSPLAYS365.COM (AGENT)",
     "url": "https://ag.lotusplays365.com",
-    "share": 9,
+    "share": 19,
     "logo": "assets/brand_logos/lotusbet345.com.png",
     "isVip": true,
     "vipType": "VIP Agent Access",
@@ -2134,7 +2134,7 @@ const DEFAULT_SITES = [
   {
     "name": "SPORTPLAY99.WIN (ADMIN)",
     "url": "https://admin.sportplay99.win",
-    "share": 9,
+    "share": 19,
     "logo": "assets/logo.png",
     "isVip": true,
     "vipType": "VIP Admin Access",
