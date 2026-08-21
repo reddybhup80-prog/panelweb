@@ -1868,29 +1868,48 @@ button, input, select, textarea { font-family: inherit; }
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 1.1fr 1.3fr 1.3fr;
+  grid-template-columns: 1.3fr 0.9fr 1.1fr 1.3fr;
   gap: 2rem;
   margin-bottom: 2.2rem;
   max-width: 100%;
   align-items: start;
 }
 .footer-brand p {
-  color: var(--text-muted); font-size: 0.9rem;
-  margin-top: 0.8rem; max-width: 320px;
+  color: var(--text-muted); font-size: 0.88rem;
+  margin-top: 0.8rem; max-width: 300px;
   line-height: 1.45;
 }
-.footer-contact-block h4,
-.footer-timing-block h4 {
+.footer-links h4,
+.footer-contact-block h4 {
   font-size: 0.95rem; margin-bottom: 0.85rem; color: var(--gold);
   display: flex; align-items: center; gap: 0.45rem;
 }
-.footer-support-card,
-.footer-timing-card {
+.footer-links a {
+  display: block; color: var(--text-muted);
+  font-size: 0.88rem; margin-bottom: 0.5rem;
+  transition: color var(--transition);
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-links a i { margin-right: 0.4rem; }
+.footer-links a.gold { color: var(--gold); }
+.footer-support-card {
   background: rgba(255, 215, 0, 0.05);
   border: 1px solid rgba(255, 215, 0, 0.22);
   border-radius: 14px;
-  padding: 1rem 1.15rem;
+  padding: 0.95rem 1rem;
   backdrop-filter: blur(8px);
+}
+.footer-timing-badge-wrap {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed rgba(255, 215, 0, 0.2);
+}
+.timing-hours-sm {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.2px;
+  margin-top: 0.25rem;
 }
 .footer-support-item {
   display: flex;
