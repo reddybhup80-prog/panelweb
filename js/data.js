@@ -1,5 +1,5 @@
 // Curated White Label Gaming Brands & VIP Portals
-// Deduplicated: Exactly 1 card per brand/link keeping the HIGHEST percentage (+2.5% to +3%)
+// Deduplicated: Exactly 1 distinct brand card per brand with the HIGHEST sharing percentage (+2.5% to +3%)
 
 const DEFAULT_SITES = [
   {
@@ -127,7 +127,7 @@ const DEFAULT_SITES = [
     "url": "http://99oexch.com/",
     "orig_share": 16.0,
     "share": 19,
-    "logo": "assets/logo.png",
+    "logo": "assets/brand_logos/oexch9.png",
     "id": 16
   },
   {
@@ -211,7 +211,7 @@ const DEFAULT_SITES = [
     "id": 26
   },
   {
-    "name": "ALLPANEL247",
+    "name": "ALLPANEL247.COM",
     "url": "http://allpanel247.com/",
     "orig_share": 16.0,
     "share": 19,
@@ -235,7 +235,7 @@ const DEFAULT_SITES = [
     "id": 29
   },
   {
-    "name": "ALLPANEL777",
+    "name": "ALLPANEL777.COM",
     "url": "http://allpanel777.now/",
     "orig_share": 16.0,
     "share": 19,
@@ -243,7 +243,7 @@ const DEFAULT_SITES = [
     "id": 30
   },
   {
-    "name": "ALLPANELEXCH9",
+    "name": "ALLPANELEXCH9.COM",
     "url": "http://allpanelexch9.co/",
     "orig_share": 16.0,
     "share": 19,
@@ -507,20 +507,12 @@ const DEFAULT_SITES = [
     "id": 63
   },
   {
-    "name": "DIAMONDEXCH99.ART",
-    "url": "http://diamondexch99.art/",
-    "orig_share": 8.0,
-    "share": 11,
-    "logo": "assets/brand_logos/DIAMONDEXCH99.png",
-    "id": 64
-  },
-  {
     "name": "DIAMONDEXCH99.COM",
     "url": "http://diamondexch99.com/",
     "orig_share": 23.0,
     "share": 26,
     "logo": "assets/brand_logos/DIAMONDEXCH99.png",
-    "id": 65
+    "id": 64
   },
   {
     "name": "DRAGONEXCH.COM",
@@ -528,7 +520,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/DRAGON.jpg",
-    "id": 66
+    "id": 65
   },
   {
     "name": "DREAM555.COM",
@@ -536,15 +528,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/dream555.png",
-    "id": 67
-  },
-  {
-    "name": "DREAM555.IO",
-    "url": "http://dream555.io/",
-    "orig_share": 7.0,
-    "share": 10,
-    "logo": "assets/brand_logos/dream555.png",
-    "id": 68
+    "id": 66
   },
   {
     "name": "EXCH333.COM",
@@ -552,7 +536,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/logo.png",
-    "id": 69
+    "id": 67
   },
   {
     "name": "EXCH444.COM",
@@ -560,7 +544,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/logo.png",
-    "id": 70
+    "id": 68
   },
   {
     "name": "EXCH9.COM",
@@ -568,7 +552,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/logo.png",
-    "id": 71
+    "id": 69
   },
   {
     "name": "EXCH99.COM",
@@ -576,7 +560,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/logo.png",
-    "id": 72
+    "id": 70
   },
   {
     "name": "EXCHANGE666.COM",
@@ -584,15 +568,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/logo.png",
-    "id": 73
-  },
-  {
-    "name": "FAIRBET7.CO",
-    "url": "http://fairbet7.co/",
-    "orig_share": 15.0,
-    "share": 18,
-    "logo": "assets/brand_logos/Fairbet7.png",
-    "id": 74
+    "id": 71
   },
   {
     "name": "FAIRBET7.COM",
@@ -600,7 +576,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.5,
     "share": 20,
     "logo": "assets/brand_logos/Fairbet7.png",
-    "id": 75
+    "id": 72
   },
   {
     "name": "FAIREXCHANGE9.COM",
@@ -608,7 +584,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/Fairexchange9.com.png",
-    "id": 76
+    "id": 73
   },
   {
     "name": "FAIRPLAY2026.COM",
@@ -616,7 +592,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/Fairexchange9.com.png",
-    "id": 77
+    "id": 74
   },
   {
     "name": "FAIRX9.COM",
@@ -624,7 +600,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/FAIRX9.png",
-    "id": 78
+    "id": 75
   },
   {
     "name": "FANCY99.COM",
@@ -632,7 +608,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/Fancy99.com.png",
-    "id": 79
+    "id": 76
   },
   {
     "name": "FLASH777.IO",
@@ -640,7 +616,7 @@ const DEFAULT_SITES = [
     "orig_share": 19.0,
     "share": 22,
     "logo": "assets/logo.png",
-    "id": 80
+    "id": 77
   },
   {
     "name": "FREEDOMEXCH247.COM",
@@ -648,7 +624,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/freedomexch99-logo.png",
-    "id": 81
+    "id": 78
   },
   {
     "name": "FREEHIT7.COM",
@@ -656,7 +632,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/FREEHIT.png",
-    "id": 82
+    "id": 79
   },
   {
     "name": "FUNBET9.COM",
@@ -664,7 +640,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/FUNBET.png",
-    "id": 83
+    "id": 80
   },
   {
     "name": "GAMEPLAY9.COM",
@@ -672,15 +648,15 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/GAMEPLAY9.png",
-    "id": 84
+    "id": 81
   },
   {
-    "name": "GOAMBANI9",
+    "name": "GOAMBANI9.COM",
     "url": "http://goambani9.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 85
+    "id": 82
   },
   {
     "name": "GOASIA9.IO",
@@ -688,7 +664,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/Asiaexchange.io.png",
-    "id": 86
+    "id": 83
   },
   {
     "name": "GOBOOK9.COM",
@@ -696,7 +672,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 87
+    "id": 84
   },
   {
     "name": "GOCRIC9.COM",
@@ -704,7 +680,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.5,
     "share": 12,
     "logo": "assets/brand_logos/CRICKPLAY.png",
-    "id": 88
+    "id": 85
   },
   {
     "name": "GOEXCH247.COM",
@@ -712,7 +688,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 89
+    "id": 86
   },
   {
     "name": "GOEXCH365.COM",
@@ -720,31 +696,31 @@ const DEFAULT_SITES = [
     "orig_share": 17.5,
     "share": 20,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 90
+    "id": 87
   },
   {
-    "name": "GOEXCH777",
+    "name": "GOEXCH777.COM",
     "url": "http://goexch777.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 91
+    "id": 88
   },
   {
-    "name": "GOEXCH9",
+    "name": "GOEXCH9.COM",
     "url": "http://goexch9.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 92
+    "id": 89
   },
   {
-    "name": "GOID9",
+    "name": "GOID9.COM",
     "url": "http://goid9.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 93
+    "id": 90
   },
   {
     "name": "GOLDEN7777.COM",
@@ -752,7 +728,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Goldenexch99.png",
-    "id": 94
+    "id": 91
   },
   {
     "name": "GOLDENEXCH99.NOW",
@@ -760,7 +736,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Goldenexch99.png",
-    "id": 95
+    "id": 92
   },
   {
     "name": "GOMATCH9.COM",
@@ -768,7 +744,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/logo.png",
-    "id": 96
+    "id": 93
   },
   {
     "name": "GOX99.COM",
@@ -776,7 +752,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 97
+    "id": 94
   },
   {
     "name": "ICE247.CO",
@@ -784,7 +760,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/ICE247.CO.png",
-    "id": 98
+    "id": 95
   },
   {
     "name": "ICE777.WORLD",
@@ -792,7 +768,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/brand_logos/Iceexchange.com.png",
-    "id": 99
+    "id": 96
   },
   {
     "name": "ICEASIA9.COM",
@@ -800,7 +776,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/Iceexchange.com.png",
-    "id": 100
+    "id": 97
   },
   {
     "name": "ICEBOOK247.COM",
@@ -808,7 +784,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/Icebook9.png",
-    "id": 101
+    "id": 98
   },
   {
     "name": "ICEBOOK365.COM",
@@ -816,7 +792,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.5,
     "share": 20,
     "logo": "assets/brand_logos/Icebook9.png",
-    "id": 102
+    "id": 99
   },
   {
     "name": "ICEBOOK7.COM",
@@ -824,7 +800,7 @@ const DEFAULT_SITES = [
     "orig_share": 11.0,
     "share": 14,
     "logo": "assets/brand_logos/Icebook7.png",
-    "id": 103
+    "id": 100
   },
   {
     "name": "ICEBOOK777.COM",
@@ -832,7 +808,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Icebook7.png",
-    "id": 104
+    "id": 101
   },
   {
     "name": "ICEBOOK9.COM",
@@ -840,7 +816,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Icebook9.png",
-    "id": 105
+    "id": 102
   },
   {
     "name": "ICEBOOK99.COM",
@@ -848,7 +824,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/Icebook9.png",
-    "id": 106
+    "id": 103
   },
   {
     "name": "ICEDIAMOND9.COM",
@@ -856,7 +832,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/brand_logos/Iceexchange.com.png",
-    "id": 107
+    "id": 104
   },
   {
     "name": "ICEEXCH.IN",
@@ -864,7 +840,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/Iceexchange.com.png",
-    "id": 108
+    "id": 105
   },
   {
     "name": "ICEEXCHANGE.IN",
@@ -872,7 +848,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.5,
     "share": 17,
     "logo": "assets/brand_logos/Iceexchange.com.png",
-    "id": 109
+    "id": 106
   },
   {
     "name": "ICRIC99.COM",
@@ -880,7 +856,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/CRICKPLAY.png",
-    "id": 110
+    "id": 107
   },
   {
     "name": "INDIAEXCH.COM",
@@ -888,23 +864,23 @@ const DEFAULT_SITES = [
     "orig_share": 11.0,
     "share": 14,
     "logo": "assets/brand_logos/Indiaexch.png",
-    "id": 111
+    "id": 108
   },
   {
-    "name": "IPLBET777",
+    "name": "IPLBET777.COM",
     "url": "http://iplbet777.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/99IPLEXCH.avif",
-    "id": 112
+    "id": 109
   },
   {
-    "name": "IPLBET9",
+    "name": "IPLBET9.COM",
     "url": "http://iplbet9.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/99IPLEXCH.avif",
-    "id": 113
+    "id": 110
   },
   {
     "name": "JACKPOT247.LIVE",
@@ -912,7 +888,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/logo.png",
-    "id": 114
+    "id": 111
   },
   {
     "name": "JORDANEXCH9.COM",
@@ -920,7 +896,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/myjordan9.png",
-    "id": 115
+    "id": 112
   },
   {
     "name": "KALYANBOOK365.COM",
@@ -928,7 +904,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.0,
     "share": 21,
     "logo": "assets/brand_logos/kalyanbook.png",
-    "id": 116
+    "id": 113
   },
   {
     "name": "KALYANBOOK777.COM",
@@ -936,7 +912,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/kalyanbook.png",
-    "id": 117
+    "id": 114
   },
   {
     "name": "KALYANBOOK9.COM",
@@ -944,7 +920,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.0,
     "share": 20,
     "logo": "assets/brand_logos/kalyanbook.png",
-    "id": 118
+    "id": 115
   },
   {
     "name": "KHILADI2026.COM",
@@ -952,7 +928,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/logo.png",
-    "id": 119
+    "id": 116
   },
   {
     "name": "KINGEXCH2.COM",
@@ -960,7 +936,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/KINGPLAY9.png",
-    "id": 120
+    "id": 117
   },
   {
     "name": "KINGEXCH2027.COM",
@@ -968,7 +944,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/KINGPLAY9.png",
-    "id": 121
+    "id": 118
   },
   {
     "name": "KINGEXCH365.COM",
@@ -976,23 +952,23 @@ const DEFAULT_SITES = [
     "orig_share": 8.0,
     "share": 11,
     "logo": "assets/brand_logos/KINGPLAY9.png",
-    "id": 122
+    "id": 119
   },
   {
-    "name": "KINGPLAY7",
+    "name": "KINGPLAY7.COM",
     "url": "http://kingplay7.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/kingplay7.com.png",
-    "id": 123
+    "id": 120
   },
   {
-    "name": "KINGPLAY9",
+    "name": "KINGPLAY9.COM",
     "url": "http://kingplay9.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/KINGPLAY9.png",
-    "id": 124
+    "id": 121
   },
   {
     "name": "LASER2026.COM",
@@ -1000,7 +976,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/laser2026.com (1).png",
-    "id": 125
+    "id": 122
   },
   {
     "name": "LASER345.COM",
@@ -1008,7 +984,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/laser2026.com (1).png",
-    "id": 126
+    "id": 123
   },
   {
     "name": "LASERBETS.COM",
@@ -1016,7 +992,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/LASERSBOOK.gif",
-    "id": 127
+    "id": 124
   },
   {
     "name": "LASERBOOK399.COM",
@@ -1024,7 +1000,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/LASERSBOOK.gif",
-    "id": 128
+    "id": 125
   },
   {
     "name": "LASERSBOOK247.COM",
@@ -1032,7 +1008,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/LASERSBOOK.gif",
-    "id": 129
+    "id": 126
   },
   {
     "name": "LCPLAY247.COM",
@@ -1040,7 +1016,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/logo.png",
-    "id": 130
+    "id": 127
   },
   {
     "name": "LEMONEXCH247.COM",
@@ -1048,7 +1024,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/Lemonexch7.com.png",
-    "id": 131
+    "id": 128
   },
   {
     "name": "LEMONEXCH365.COM",
@@ -1056,23 +1032,23 @@ const DEFAULT_SITES = [
     "orig_share": 19.0,
     "share": 22,
     "logo": "assets/brand_logos/Lemonexch7.com.png",
-    "id": 132
+    "id": 129
   },
   {
-    "name": "LEMONEXCH7",
+    "name": "LEMONEXCH7.COM",
     "url": "http://lemonexch7.com/",
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Lemonexch7.com.png",
-    "id": 133
+    "id": 130
   },
   {
-    "name": "LEMONEXCH777",
+    "name": "LEMONEXCH777.COM",
     "url": "http://lemonexch777.com/",
     "orig_share": 17.0,
     "share": 20,
     "logo": "assets/brand_logos/Lemonexch7.com.png",
-    "id": 134
+    "id": 131
   },
   {
     "name": "LIONEXCH.COM",
@@ -1080,7 +1056,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.5,
     "share": 21,
     "logo": "assets/logo.png",
-    "id": 135
+    "id": 132
   },
   {
     "name": "LORDS365.COM",
@@ -1088,7 +1064,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/LORDS365.jpg",
-    "id": 136
+    "id": 133
   },
   {
     "name": "LORDSEXCH.COM",
@@ -1096,7 +1072,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.0,
     "share": 21,
     "logo": "assets/brand_logos/LORDS365.jpg",
-    "id": 137
+    "id": 134
   },
   {
     "name": "LOTUS.GOX99.COM",
@@ -1104,7 +1080,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 138
+    "id": 135
   },
   {
     "name": "LOTUS2026.COM",
@@ -1112,7 +1088,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 139
+    "id": 136
   },
   {
     "name": "LOTUS247.COM",
@@ -1120,7 +1096,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 140
+    "id": 137
   },
   {
     "name": "LOTUS399.CO",
@@ -1128,7 +1104,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 141
+    "id": 138
   },
   {
     "name": "LOTUS7BOOK.COM",
@@ -1136,7 +1112,7 @@ const DEFAULT_SITES = [
     "orig_share": 26.0,
     "share": 29,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 142
+    "id": 139
   },
   {
     "name": "LOTUS888.COM",
@@ -1144,7 +1120,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 143
+    "id": 140
   },
   {
     "name": "LOTUSBET345.COM",
@@ -1152,7 +1128,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 144
+    "id": 141
   },
   {
     "name": "LOTUSBOOK.IO",
@@ -1160,7 +1136,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 145
+    "id": 142
   },
   {
     "name": "LOTUSBOOK247.IO",
@@ -1168,7 +1144,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 146
+    "id": 143
   },
   {
     "name": "LOTUSBOOK7.ART",
@@ -1176,15 +1152,7 @@ const DEFAULT_SITES = [
     "orig_share": 11.0,
     "share": 14,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 147
-  },
-  {
-    "name": "LOTUSBOOK9.CO",
-    "url": "http://lotusbook9.co/",
-    "orig_share": 11.0,
-    "share": 14,
-    "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 148
+    "id": 144
   },
   {
     "name": "LOTUSBOOK9.WIN",
@@ -1192,7 +1160,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 149
+    "id": 145
   },
   {
     "name": "LOTUSBOOKS247.GAMES",
@@ -1200,7 +1168,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 150
+    "id": 146
   },
   {
     "name": "LOTUSEXCH247.COM",
@@ -1208,7 +1176,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 151
+    "id": 147
   },
   {
     "name": "LOTUSFAIRS365.COM",
@@ -1216,7 +1184,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.0,
     "share": 23,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 152
+    "id": 148
   },
   {
     "name": "LOTUSP365.COM",
@@ -1224,7 +1192,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 153
+    "id": 149
   },
   {
     "name": "LOTUSPLAYS365.COM",
@@ -1232,7 +1200,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 154
+    "id": 150
   },
   {
     "name": "LUCKY7.GAMES",
@@ -1240,7 +1208,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.5,
     "share": 13,
     "logo": "assets/brand_logos/Lucky7.games.png",
-    "id": 155
+    "id": 151
   },
   {
     "name": "LUCKYEXCH9.CO",
@@ -1248,7 +1216,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/brand_logos/LUCKYEXCH9.png",
-    "id": 156
+    "id": 152
   },
   {
     "name": "MAHADEV2027.COM",
@@ -1256,7 +1224,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/mahadev2027.png",
-    "id": 157
+    "id": 153
   },
   {
     "name": "MAHADEVEXCH99.COM",
@@ -1264,7 +1232,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/mahadev2027.png",
-    "id": 158
+    "id": 154
   },
   {
     "name": "MASTEREXCH.COM",
@@ -1272,7 +1240,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.5,
     "share": 20,
     "logo": "assets/logo.png",
-    "id": 159
+    "id": 155
   },
   {
     "name": "MATCHBOX9.COM",
@@ -1280,7 +1248,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/logo.png",
-    "id": 160
+    "id": 156
   },
   {
     "name": "MY99EXCH.TECH",
@@ -1288,7 +1256,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/logo.png",
-    "id": 161
+    "id": 157
   },
   {
     "name": "MY99FAIRPLAY.COM",
@@ -1296,7 +1264,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/Fairexchange9.com.png",
-    "id": 162
+    "id": 158
   },
   {
     "name": "MY99IPL.COM",
@@ -1304,7 +1272,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/99IPLEXCH.avif",
-    "id": 163
+    "id": 159
   },
   {
     "name": "MY99PLAY.COM",
@@ -1312,7 +1280,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.0,
     "share": 23,
     "logo": "assets/brand_logos/MY99PLAY.png",
-    "id": 164
+    "id": 160
   },
   {
     "name": "MYDIAMOND.ONLINE",
@@ -1320,7 +1288,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/DIAMONDEXCH99.png",
-    "id": 165
+    "id": 161
   },
   {
     "name": "MYDIAMOND9.COM",
@@ -1328,7 +1296,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/DIAMONDEXCH99.png",
-    "id": 166
+    "id": 162
   },
   {
     "name": "MYEXCHANGE9.COM",
@@ -1336,7 +1304,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/logo.png",
-    "id": 167
+    "id": 163
   },
   {
     "name": "MYFAIRPLAY99.COM",
@@ -1344,7 +1312,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.0,
     "share": 23,
     "logo": "assets/brand_logos/Fairexchange9.com.png",
-    "id": 168
+    "id": 164
   },
   {
     "name": "MYJORDAN9.COM",
@@ -1352,7 +1320,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/myjordan9.png",
-    "id": 169
+    "id": 165
   },
   {
     "name": "MYKINGEXCH.COM",
@@ -1360,7 +1328,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/KINGPLAY9.png",
-    "id": 170
+    "id": 166
   },
   {
     "name": "MYLASER247.INFO",
@@ -1368,7 +1336,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/mylaser247.info.png",
-    "id": 171
+    "id": 167
   },
   {
     "name": "MYLASER9.COM",
@@ -1376,7 +1344,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/mylaser247.info.png",
-    "id": 172
+    "id": 168
   },
   {
     "name": "MYLOTUSBET365.COM",
@@ -1384,7 +1352,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 173
+    "id": 169
   },
   {
     "name": "MYLOTUSX365.COM",
@@ -1392,7 +1360,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 174
+    "id": 170
   },
   {
     "name": "MYREDDYBOOK9.COM",
@@ -1400,7 +1368,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.0,
     "share": 21,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 175
+    "id": 171
   },
   {
     "name": "MYREDDYBOOK99.COM",
@@ -1408,7 +1376,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 176
+    "id": 172
   },
   {
     "name": "MYSSEXCH.COM",
@@ -1416,7 +1384,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/logo.png",
-    "id": 177
+    "id": 173
   },
   {
     "name": "MYTIGER247.PRO",
@@ -1424,7 +1392,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/TigerALL.png",
-    "id": 178
+    "id": 174
   },
   {
     "name": "MYTIGER9.COM",
@@ -1432,7 +1400,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/TigerALL.png",
-    "id": 179
+    "id": 175
   },
   {
     "name": "MYULTRAWIN.COM",
@@ -1440,7 +1408,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/logo.png",
-    "id": 180
+    "id": 176
   },
   {
     "name": "MYWINBUZZ9.COM",
@@ -1448,15 +1416,15 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/WINBUZZEXCH.jpg",
-    "id": 181
+    "id": 177
   },
   {
-    "name": "OEXCH9",
+    "name": "OEXCH9.COM",
     "url": "http://oexch9.com/",
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/oexch9.png",
-    "id": 182
+    "id": 178
   },
   {
     "name": "PARKER777.IO",
@@ -1464,7 +1432,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/logo.png",
-    "id": 183
+    "id": 179
   },
   {
     "name": "PEACH777.COM",
@@ -1472,15 +1440,15 @@ const DEFAULT_SITES = [
     "orig_share": 17.0,
     "share": 20,
     "logo": "assets/brand_logos/Peachexch.png",
-    "id": 184
+    "id": 180
   },
   {
-    "name": "PEACHEXCH",
+    "name": "PEACHEXCH.COM",
     "url": "http://peachexch.com/",
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Peachexch.png",
-    "id": 185
+    "id": 181
   },
   {
     "name": "PLAY2027.COM",
@@ -1488,7 +1456,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/PLAY2027.png",
-    "id": 186
+    "id": 182
   },
   {
     "name": "PLAYBOOK9.COM",
@@ -1496,7 +1464,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Playbook9.png",
-    "id": 187
+    "id": 183
   },
   {
     "name": "PLAYCLUB99.COM",
@@ -1504,7 +1472,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/playclub99.com.png",
-    "id": 188
+    "id": 184
   },
   {
     "name": "PLAYEXCH9.CO",
@@ -1512,7 +1480,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/logo.png",
-    "id": 189
+    "id": 185
   },
   {
     "name": "PLAYFAIR345.COM",
@@ -1520,7 +1488,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.0,
     "share": 21,
     "logo": "assets/brand_logos/Fairexchange9.com.png",
-    "id": 190
+    "id": 186
   },
   {
     "name": "PLAYINR.COM",
@@ -1528,7 +1496,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/PLAYINR.jpg",
-    "id": 191
+    "id": 187
   },
   {
     "name": "PLAYINR99.COM",
@@ -1536,7 +1504,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/playinr99.com.png",
-    "id": 192
+    "id": 188
   },
   {
     "name": "PLAYLOTUSS365.COM",
@@ -1544,7 +1512,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/lotusbet345.com.png",
-    "id": 193
+    "id": 189
   },
   {
     "name": "PLAYREDDY247.COM",
@@ -1552,7 +1520,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 194
+    "id": 190
   },
   {
     "name": "PLAYREDDY365.COM",
@@ -1560,7 +1528,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 195
+    "id": 191
   },
   {
     "name": "PLAYREDDY99.COM",
@@ -1568,7 +1536,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 196
+    "id": 192
   },
   {
     "name": "PLAYWORLD9.COM",
@@ -1576,7 +1544,7 @@ const DEFAULT_SITES = [
     "orig_share": 8.0,
     "share": 11,
     "logo": "assets/brand_logos/playworld9.png",
-    "id": 197
+    "id": 193
   },
   {
     "name": "POWERGREEN.LIVE",
@@ -1584,7 +1552,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/powerwin.green.png",
-    "id": 198
+    "id": 194
   },
   {
     "name": "POWERWIN.GREEN",
@@ -1592,7 +1560,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/powerwin.green.png",
-    "id": 199
+    "id": 195
   },
   {
     "name": "PROBET247.COM",
@@ -1600,7 +1568,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/PROBET247.svg",
-    "id": 200
+    "id": 196
   },
   {
     "name": "PROBETX.COM",
@@ -1608,7 +1576,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/PROBET247.svg",
-    "id": 201
+    "id": 197
   },
   {
     "name": "R777.US",
@@ -1616,7 +1584,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.5,
     "share": 12,
     "logo": "assets/logo.png",
-    "id": 202
+    "id": 198
   },
   {
     "name": "RADHE2027.COM",
@@ -1624,7 +1592,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/Radhexch.png",
-    "id": 203
+    "id": 199
   },
   {
     "name": "RADHEEX.COM",
@@ -1632,15 +1600,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.5,
     "share": 12,
     "logo": "assets/brand_logos/Radhexch.png",
-    "id": 204
-  },
-  {
-    "name": "RADHEEX.IO",
-    "url": "http://radheex.io/",
-    "orig_share": 9.5,
-    "share": 12,
-    "logo": "assets/brand_logos/Radhexch.png",
-    "id": 205
+    "id": 200
   },
   {
     "name": "REDDY2027.COM",
@@ -1648,7 +1608,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 206
+    "id": 201
   },
   {
     "name": "REDDY222.COM",
@@ -1656,7 +1616,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 207
+    "id": 202
   },
   {
     "name": "REDDY444.COM",
@@ -1664,7 +1624,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 208
+    "id": 203
   },
   {
     "name": "REDDY999.COM",
@@ -1672,7 +1632,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 209
+    "id": 204
   },
   {
     "name": "REDDYBOOK247.WIN",
@@ -1680,7 +1640,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 210
+    "id": 205
   },
   {
     "name": "REDDYBOOK365.WIN",
@@ -1688,7 +1648,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 211
+    "id": 206
   },
   {
     "name": "REDDYBOOK99.WIN",
@@ -1696,7 +1656,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/playreddy247.com.png",
-    "id": 212
+    "id": 207
   },
   {
     "name": "SAFFRON247.COM",
@@ -1704,7 +1664,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.5,
     "share": 20,
     "logo": "assets/brand_logos/SAFFRON247.COM.png",
-    "id": 213
+    "id": 208
   },
   {
     "name": "SAFFRON777.COM",
@@ -1712,7 +1672,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/SAFFRON247.COM.png",
-    "id": 214
+    "id": 209
   },
   {
     "name": "SAFFRON99.COM",
@@ -1720,7 +1680,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/Saffronexch.png",
-    "id": 215
+    "id": 210
   },
   {
     "name": "SAFFRONEXCH.COM",
@@ -1728,7 +1688,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Saffronexch.png",
-    "id": 216
+    "id": 211
   },
   {
     "name": "SAIBABA9.COM",
@@ -1736,7 +1696,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.5,
     "share": 16,
     "logo": "assets/logo.png",
-    "id": 217
+    "id": 212
   },
   {
     "name": "SAPPHIREEXCH9.COM",
@@ -1744,7 +1704,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/logo.png",
-    "id": 218
+    "id": 213
   },
   {
     "name": "SILVER247X.COM",
@@ -1752,7 +1712,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/Silverbook247.cm.png",
-    "id": 219
+    "id": 214
   },
   {
     "name": "SILVERBET777.CLUB",
@@ -1760,15 +1720,15 @@ const DEFAULT_SITES = [
     "orig_share": 17.5,
     "share": 20,
     "logo": "assets/brand_logos/Silverexch.png",
-    "id": 220
+    "id": 215
   },
   {
-    "name": "SILVERBHAI",
+    "name": "SILVERBHAI.COM",
     "url": "http://silverbhai.com/",
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Silverexch.png",
-    "id": 221
+    "id": 216
   },
   {
     "name": "SILVERBOOK247.COM",
@@ -1776,7 +1736,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Silverbook247.cm.png",
-    "id": 222
+    "id": 217
   },
   {
     "name": "SILVERBOOK99.COM",
@@ -1784,15 +1744,15 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/Silverbook247.cm.png",
-    "id": 223
+    "id": 218
   },
   {
-    "name": "SILVEREXCH",
+    "name": "SILVEREXCH.COM",
     "url": "http://silverexch.com/",
     "orig_share": 16.5,
     "share": 19,
     "logo": "assets/brand_logos/Silverexch.png",
-    "id": 224
+    "id": 219
   },
   {
     "name": "SILVEREXCH247.COM",
@@ -1800,7 +1760,7 @@ const DEFAULT_SITES = [
     "orig_share": 11.0,
     "share": 14,
     "logo": "assets/brand_logos/Silverexch.png",
-    "id": 225
+    "id": 220
   },
   {
     "name": "SILVEREXCH9.CO",
@@ -1808,7 +1768,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/brand_logos/Silverexch.png",
-    "id": 226
+    "id": 221
   },
   {
     "name": "SKY2027.COM",
@@ -1816,7 +1776,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/Sky24x7.co.png",
-    "id": 227
+    "id": 222
   },
   {
     "name": "SKY24X7.CO",
@@ -1824,15 +1784,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/Sky24x7.co.png",
-    "id": 228
-  },
-  {
-    "name": "SKYEXCH.BIZ",
-    "url": "http://skyexch.biz/",
-    "orig_share": 19.0,
-    "share": 22,
-    "logo": "assets/brand_logos/SKYEXCHANGE247.com.png",
-    "id": 229
+    "id": 223
   },
   {
     "name": "SKYEXCH.VIP",
@@ -1840,7 +1792,7 @@ const DEFAULT_SITES = [
     "orig_share": 19.0,
     "share": 22,
     "logo": "assets/brand_logos/SKYEXCHANGE247.com.png",
-    "id": 230
+    "id": 224
   },
   {
     "name": "SKYEXCH247.ONLINE",
@@ -1848,7 +1800,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.5,
     "share": 21,
     "logo": "assets/brand_logos/SKYEXCHANGE247.com.png",
-    "id": 231
+    "id": 225
   },
   {
     "name": "SKYEXCHX.COM",
@@ -1856,7 +1808,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/SKYEXCHANGE247.com.png",
-    "id": 232
+    "id": 226
   },
   {
     "name": "SKYFAIR.VIP HKD",
@@ -1864,7 +1816,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.0,
     "share": 21,
     "logo": "assets/brand_logos/SKYEXCHANGE247.com.png",
-    "id": 233
+    "id": 227
   },
   {
     "name": "SPINPLAY99.COM",
@@ -1872,7 +1824,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.0,
     "share": 21,
     "logo": "assets/brand_logos/spinplay99.png",
-    "id": 234
+    "id": 228
   },
   {
     "name": "SUNEXCH.COM",
@@ -1880,7 +1832,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/logo.png",
-    "id": 235
+    "id": 229
   },
   {
     "name": "T10EXCHANGE.COM",
@@ -1888,7 +1840,7 @@ const DEFAULT_SITES = [
     "orig_share": 6.5,
     "share": 9,
     "logo": "assets/brand_logos/T10EXCH.png",
-    "id": 236
+    "id": 230
   },
   {
     "name": "TAJ777.NOW",
@@ -1896,7 +1848,7 @@ const DEFAULT_SITES = [
     "orig_share": 19.0,
     "share": 22,
     "logo": "assets/logo.png",
-    "id": 237
+    "id": 231
   },
   {
     "name": "TARGET666.COM",
@@ -1904,7 +1856,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/logo.png",
-    "id": 238
+    "id": 232
   },
   {
     "name": "TENEXCH.COM",
@@ -1912,7 +1864,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.5,
     "share": 23,
     "logo": "assets/brand_logos/Tenexch.com.png",
-    "id": 239
+    "id": 233
   },
   {
     "name": "TESLAEXCH.COM",
@@ -1920,7 +1872,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/logo.png",
-    "id": 240
+    "id": 234
   },
   {
     "name": "THE100EXCH.COM",
@@ -1928,7 +1880,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/the100exch.png",
-    "id": 241
+    "id": 235
   },
   {
     "name": "THELOTUSBOOK.COM",
@@ -1936,7 +1888,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/lotus2026.com (1).png",
-    "id": 242
+    "id": 236
   },
   {
     "name": "TIGER2026.COM",
@@ -1944,7 +1896,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/TigerALL.png",
-    "id": 243
+    "id": 237
   },
   {
     "name": "TIGER365.PRO",
@@ -1952,7 +1904,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/TigerALL.png",
-    "id": 244
+    "id": 238
   },
   {
     "name": "TIGER399.COM",
@@ -1960,7 +1912,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/TigerALL.png",
-    "id": 245
+    "id": 239
   },
   {
     "name": "TURBO111.COM",
@@ -1968,7 +1920,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/TURBO111.png",
-    "id": 246
+    "id": 240
   },
   {
     "name": "TURBOEXCH.COM",
@@ -1976,7 +1928,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/TURBO.gif",
-    "id": 247
+    "id": 241
   },
   {
     "name": "ULT.GOX99.COM",
@@ -1984,7 +1936,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/brand_logos/goexch9.png",
-    "id": 248
+    "id": 242
   },
   {
     "name": "VICTORYEXCH.CLUB",
@@ -1992,7 +1944,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/logo.png",
-    "id": 249
+    "id": 243
   },
   {
     "name": "VIPBHAI247.COM",
@@ -2000,7 +1952,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.0,
     "share": 23,
     "logo": "assets/brand_logos/betbhai.blue.png",
-    "id": 250
+    "id": 244
   },
   {
     "name": "VIPBOOK7.COM",
@@ -2008,7 +1960,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.0,
     "share": 20,
     "logo": "assets/brand_logos/vipbook999.png",
-    "id": 251
+    "id": 245
   },
   {
     "name": "VIPBOOK99.COM",
@@ -2016,7 +1968,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/vipbook999.png",
-    "id": 252
+    "id": 246
   },
   {
     "name": "VIPBOOK999.COM",
@@ -2024,7 +1976,7 @@ const DEFAULT_SITES = [
     "orig_share": 17.0,
     "share": 20,
     "logo": "assets/brand_logos/vipbook999.png",
-    "id": 253
+    "id": 247
   },
   {
     "name": "VIPCRIC247.COM",
@@ -2032,7 +1984,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.0,
     "share": 23,
     "logo": "assets/brand_logos/CRICKPLAY.png",
-    "id": 254
+    "id": 248
   },
   {
     "name": "VIPCRICK247.COM",
@@ -2040,7 +1992,7 @@ const DEFAULT_SITES = [
     "orig_share": 20.0,
     "share": 23,
     "logo": "assets/brand_logos/CRICKPLAY.png",
-    "id": 255
+    "id": 249
   },
   {
     "name": "VIPEXCH.COM",
@@ -2048,7 +2000,7 @@ const DEFAULT_SITES = [
     "orig_share": 15.0,
     "share": 18,
     "logo": "assets/brand_logos/vipexchange.png",
-    "id": 256
+    "id": 250
   },
   {
     "name": "VIPEXCH365.COM",
@@ -2056,7 +2008,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/vipexchange.png",
-    "id": 257
+    "id": 251
   },
   {
     "name": "VIPEXCH9.COM",
@@ -2064,7 +2016,7 @@ const DEFAULT_SITES = [
     "orig_share": 18.5,
     "share": 21,
     "logo": "assets/brand_logos/vipexchange.png",
-    "id": 258
+    "id": 252
   },
   {
     "name": "VIPLASER247.COM",
@@ -2072,7 +2024,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/mylaser247.info.png",
-    "id": 259
+    "id": 253
   },
   {
     "name": "VIPPLAY9.COM",
@@ -2080,7 +2032,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/VIPPLAY.png",
-    "id": 260
+    "id": 254
   },
   {
     "name": "VIRATEXCH365.COM",
@@ -2088,7 +2040,7 @@ const DEFAULT_SITES = [
     "orig_share": 12.0,
     "share": 15,
     "logo": "assets/brand_logos/viratexch365.com.png",
-    "id": 261
+    "id": 255
   },
   {
     "name": "WICKET20.COM",
@@ -2096,7 +2048,7 @@ const DEFAULT_SITES = [
     "orig_share": 5.5,
     "share": 8,
     "logo": "assets/brand_logos/20WIC.png",
-    "id": 262
+    "id": 256
   },
   {
     "name": "WINBUZZ2026.COM",
@@ -2104,7 +2056,7 @@ const DEFAULT_SITES = [
     "orig_share": 14.0,
     "share": 17,
     "logo": "assets/brand_logos/WINBUZZEXCH.jpg",
-    "id": 263
+    "id": 257
   },
   {
     "name": "WINBUZZ345.COM",
@@ -2112,7 +2064,7 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/WINBUZZEXCH.jpg",
-    "id": 264
+    "id": 258
   },
   {
     "name": "WINBUZZEXCH.COM",
@@ -2120,7 +2072,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/WINBUZZEXCH.jpg",
-    "id": 265
+    "id": 259
   },
   {
     "name": "WINEXCH99.COM",
@@ -2128,7 +2080,7 @@ const DEFAULT_SITES = [
     "orig_share": 9.0,
     "share": 12,
     "logo": "assets/brand_logos/WINEXCH.png",
-    "id": 266
+    "id": 260
   },
   {
     "name": "WORLD2027.COM",
@@ -2136,15 +2088,15 @@ const DEFAULT_SITES = [
     "orig_share": 16.0,
     "share": 19,
     "logo": "assets/brand_logos/WORLD7777.png",
-    "id": 267
+    "id": 261
   },
   {
-    "name": "WORLD777",
+    "name": "WORLD777.COM",
     "url": "http://world777.now/",
     "orig_share": 23.0,
     "share": 26,
     "logo": "assets/brand_logos/WORLD7777.png",
-    "id": 268
+    "id": 262
   },
   {
     "name": "WORLD999.IO",
@@ -2152,7 +2104,7 @@ const DEFAULT_SITES = [
     "orig_share": 10.0,
     "share": 13,
     "logo": "assets/brand_logos/WORLD7777.png",
-    "id": 269
+    "id": 263
   },
   {
     "name": "WORLDEXCH9.COM",
@@ -2160,7 +2112,7 @@ const DEFAULT_SITES = [
     "orig_share": 7.0,
     "share": 10,
     "logo": "assets/brand_logos/WORLD7777.png",
-    "id": 270
+    "id": 264
   },
   {
     "name": "ZPLAY2.COM",
@@ -2168,7 +2120,7 @@ const DEFAULT_SITES = [
     "orig_share": 13.0,
     "share": 16,
     "logo": "assets/logo.png",
-    "id": 271
+    "id": 265
   },
   {
     "name": "LOTUSPLAYS365.COM (AGENT)",
@@ -2177,7 +2129,7 @@ const DEFAULT_SITES = [
     "logo": "assets/brand_logos/lotusbet345.com.png",
     "isVip": true,
     "vipType": "VIP Agent Access",
-    "id": 272
+    "id": 266
   },
   {
     "name": "SPORTPLAY99.WIN (ADMIN)",
@@ -2186,7 +2138,7 @@ const DEFAULT_SITES = [
     "logo": "assets/logo.png",
     "isVip": true,
     "vipType": "VIP Admin Access",
-    "id": 273
+    "id": 267
   }
 ];
 
