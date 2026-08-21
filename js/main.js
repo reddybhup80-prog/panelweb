@@ -248,38 +248,43 @@ document.addEventListener('DOMContentLoaded', () => {
     list.forEach((site, i) => {
       const isSelected = selectedSiteIds.has(site.id);
       const card = document.createElement('div');
-      card.className = `site-card site-card-compact ${isSelected ? 'selected' : ''} ${site.isVip ? 'vip-brand-card' : ''}`;
+      card.className = `site-card ${isSelected ? 'selected' : ''} ${site.isVip ? 'vip-brand-card' : ''}`;
       card.dataset.id = site.id;
       card.style.animationDelay = `${Math.min(i * 0.015, 0.25)}s`;
 
       const visitUrl = site.url.startsWith('http') ? site.url : 'https://' + site.url;
       const logoUrl = site.logo || (typeof getBrandLogo === 'function' ? getBrandLogo(site.name || site.url) : 'assets/logo.png');
 
-      const vipBadgeHtml = site.isVip ? `<span class="site-compact-vip-pill"><i class="fas fa-crown"></i> VIP</span>` : `<span class="site-compact-type">White Label</span>`;
+      const vipBadgeHtml = site.isVip ? `<div class="site-vip-ribbon"><i class="fas fa-crown"></i> ${site.vipType || 'VIP Portal'}</div>` : '';
 
       card.innerHTML = `
-        <div class="site-compact-logo-frame">
-          <img src="${logoUrl}" alt="${escapeHtml(site.name)}" class="site-compact-img" onerror="this.onerror=null; this.src='assets/logo.png';" loading="lazy" />
-        </div>
-        <div class="site-compact-details">
-          <div class="site-compact-name" title="${escapeHtml(site.name)}">${escapeHtml(site.name)}</div>
-          <div class="site-compact-meta">
-            <span class="site-compact-share-pill"><i class="fas fa-percentage gold"></i> <strong>${site.share}%</strong> Share</span>
-            ${vipBadgeHtml}
+        <div class="site-card-frame">
+          ${vipBadgeHtml}
+          <div class="site-select-badge">
+            <i class="fas ${isSelected ? 'fa-check-circle' : 'fa-circle'}"></i>
+            <span>${isSelected ? 'Selected' : 'Select'}</span>
           </div>
+          <div class="site-brand-showcase">
+            <img src="${logoUrl}" alt="${escapeHtml(site.name)}" class="site-showcase-img" onerror="this.onerror=null; this.src='assets/logo.png';" loading="lazy" />
+          </div>
+          <div class="site-share-tag">${site.share}% Share</div>
         </div>
-        <div class="site-compact-actions">
-          <button type="button" class="btn btn-xs ${isSelected ? 'btn-primary' : 'btn-secondary'} btn-compact-toggle" title="${isSelected ? 'Selected' : 'Select Brand'}">
-            <i class="fas ${isSelected ? 'fa-check' : 'fa-plus'}"></i>
-          </button>
-          <a href="${visitUrl}" target="_blank" rel="noopener noreferrer" class="btn-compact-visit" title="Visit ${escapeHtml(site.name)}" onclick="event.stopPropagation();">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
+        <div class="site-card-content">
+          <div class="site-name">${escapeHtml(site.name)}</div>
+          <div class="site-meta"><i class="fas fa-percentage gold"></i> Sharing: <strong>${site.share}%</strong> (Lowest Deal)</div>
+          <div class="site-card-actions">
+            <button type="button" class="btn btn-sm ${isSelected ? 'btn-primary' : 'btn-secondary'} btn-toggle-select">
+              <i class="fas ${isSelected ? 'fa-check' : 'fa-plus'}"></i> ${isSelected ? 'Selected' : 'Select Brand'}
+            </button>
+            <a href="${visitUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-visit" title="Visit ${escapeHtml(site.name)}" onclick="event.stopPropagation();">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
         </div>
       `;
 
       card.addEventListener('click', (e) => {
-        if (e.target.closest('.btn-compact-visit')) return;
+        if (e.target.closest('.btn-visit')) return;
         toggleSiteSelection(site.id);
       });
 
