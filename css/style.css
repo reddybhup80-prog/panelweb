@@ -1956,9 +1956,33 @@ button, input, select, textarea { font-family: inherit; }
   padding-top: 1.5rem;
   max-width: 100%;
 }
-.disclaimer {
-  font-size: 0.8rem; color: var(--text-muted);
-  line-height: 1.5; margin-bottom: 0.8rem;
+.disclaimer-highlight-box {
+  background: rgba(255, 215, 0, 0.07);
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  border-radius: 12px;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 215, 0, 0.05);
+}
+.disclaimer-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.disclaimer-highlight-box .disclaimer {
+  font-size: 0.84rem;
+  color: #e2e8f0;
+  line-height: 1.55;
+  margin: 0;
+}
+.disclaimer-highlight-box .disclaimer strong {
+  color: var(--gold);
 }
 .copyright {
   font-size: 0.8rem; color: var(--text-muted); opacity: 0.7;
