@@ -1,5 +1,5 @@
 // Curated White Label Gaming Brands & VIP Portals
-// Fully updated with matched brand logos and adjusted minimum sharing percentages (+2.5% to +3%)
+// Deduplicated: Exactly 1 card per brand/link keeping the HIGHEST percentage (+2.5% to +3%)
 
 const DEFAULT_SITES = [
   {
@@ -127,7 +127,7 @@ const DEFAULT_SITES = [
     "url": "http://99oexch.com/",
     "orig_share": 16.0,
     "share": 19,
-    "logo": "assets/brand_logos/oexch9.png",
+    "logo": "assets/logo.png",
     "id": 16
   },
   {
@@ -213,8 +213,8 @@ const DEFAULT_SITES = [
   {
     "name": "ALLPANEL247",
     "url": "http://allpanel247.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/allpanel.png",
     "id": 27
   },
@@ -237,16 +237,16 @@ const DEFAULT_SITES = [
   {
     "name": "ALLPANEL777",
     "url": "http://allpanel777.now/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/Allpanel777.png",
     "id": 30
   },
   {
     "name": "ALLPANELEXCH9",
     "url": "http://allpanelexch9.co/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/allpanel.png",
     "id": 31
   },
@@ -725,24 +725,24 @@ const DEFAULT_SITES = [
   {
     "name": "GOEXCH777",
     "url": "http://goexch777.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
     "id": 91
   },
   {
     "name": "GOEXCH9",
     "url": "http://goexch9.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
     "id": 92
   },
   {
     "name": "GOID9",
     "url": "http://goid9.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/goexch9.png",
     "id": 93
   },
@@ -893,16 +893,16 @@ const DEFAULT_SITES = [
   {
     "name": "IPLBET777",
     "url": "http://iplbet777.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/99IPLEXCH.avif",
     "id": 112
   },
   {
     "name": "IPLBET9",
     "url": "http://iplbet9.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/99IPLEXCH.avif",
     "id": 113
   },
@@ -981,16 +981,16 @@ const DEFAULT_SITES = [
   {
     "name": "KINGPLAY7",
     "url": "http://kingplay7.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/kingplay7.com.png",
     "id": 123
   },
   {
     "name": "KINGPLAY9",
     "url": "http://kingplay9.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/KINGPLAY9.png",
     "id": 124
   },
@@ -1061,16 +1061,16 @@ const DEFAULT_SITES = [
   {
     "name": "LEMONEXCH7",
     "url": "http://lemonexch7.com/",
-    "orig_share": 15.5,
-    "share": 18,
+    "orig_share": 16.5,
+    "share": 19,
     "logo": "assets/brand_logos/Lemonexch7.com.png",
     "id": 133
   },
   {
     "name": "LEMONEXCH777",
     "url": "http://lemonexch777.com/",
-    "orig_share": 16.0,
-    "share": 19,
+    "orig_share": 17.0,
+    "share": 20,
     "logo": "assets/brand_logos/Lemonexch7.com.png",
     "id": 134
   },
@@ -1453,8 +1453,8 @@ const DEFAULT_SITES = [
   {
     "name": "OEXCH9",
     "url": "http://oexch9.com/",
-    "orig_share": 11.0,
-    "share": 14,
+    "orig_share": 16.0,
+    "share": 19,
     "logo": "assets/brand_logos/oexch9.png",
     "id": 182
   },
@@ -1477,8 +1477,8 @@ const DEFAULT_SITES = [
   {
     "name": "PEACHEXCH",
     "url": "http://peachexch.com/",
-    "orig_share": 15.5,
-    "share": 18,
+    "orig_share": 16.5,
+    "share": 19,
     "logo": "assets/brand_logos/Peachexch.png",
     "id": 185
   },
@@ -1765,8 +1765,8 @@ const DEFAULT_SITES = [
   {
     "name": "SILVERBHAI",
     "url": "http://silverbhai.com/",
-    "orig_share": 13.5,
-    "share": 16,
+    "orig_share": 16.5,
+    "share": 19,
     "logo": "assets/brand_logos/Silverexch.png",
     "id": 221
   },
@@ -1789,8 +1789,8 @@ const DEFAULT_SITES = [
   {
     "name": "SILVEREXCH",
     "url": "http://silverexch.com/",
-    "orig_share": 13.5,
-    "share": 16,
+    "orig_share": 16.5,
+    "share": 19,
     "logo": "assets/brand_logos/Silverexch.png",
     "id": 224
   },
@@ -2141,8 +2141,8 @@ const DEFAULT_SITES = [
   {
     "name": "WORLD777",
     "url": "http://world777.now/",
-    "orig_share": 21.0,
-    "share": 24,
+    "orig_share": 23.0,
+    "share": 26,
     "logo": "assets/brand_logos/WORLD7777.png",
     "id": 268
   },
