@@ -2159,7 +2159,7 @@ button, input, select, textarea { font-family: inherit; }
   
   .hero {
     padding-top: 72px;
-    padding-bottom: 2rem;
+    padding-bottom: 1.4rem;
   }
   .hero-crest-badge {
     margin-top: 0;
@@ -2170,34 +2170,130 @@ button, input, select, textarea { font-family: inherit; }
   }
   .hero h1 { font-size: 1.65rem; }
   .hero-cta .btn { width: 100%; justify-content: center; }
-  .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
-  .stat-num, .stat-text { font-size: 1.4rem; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.65rem; margin-top: 1.2rem; }
+  .stat-num, .stat-text { font-size: 1.35rem; }
+  .stat-label { font-size: 0.74rem; }
 
+  .disclaimer-ticker-wrap {
+    margin: 0 0 1.2rem 0;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .vip-portals-section {
+    padding: 1.4rem 0 2rem;
+  }
+  .vip-portal-card.flagship-card {
+    padding: 1.2rem 1rem;
+    border-radius: 16px;
+  }
+  .flagship-layout {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .screenshot-device-frame {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .vip-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+  .vip-item-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .vip-item-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sites-scroll-panel {
+    border-radius: 14px;
+  }
+  .sites-scroll-header {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
   .sites-scroll-body {
-    max-height: 480px;
-    padding: 0.75rem;
+    max-height: 500px;
+    padding: 0.85rem;
   }
   .sites-grid {
     grid-template-columns: 1fr;
-    gap: 0.65rem;
+    gap: 0.85rem;
   }
   .form-row { grid-template-columns: 1fr; }
   .functions-grid { grid-template-columns: 1fr; }
   .about-list { grid-template-columns: 1fr; }
 
-  .floating-action-bar { padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom, 0px)); }
-  .floating-action-bar .fab-inner {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 0.5rem; width: 100%;
+  /* Floating Action Bar mobile perfection - Zero clipping */
+  .floating-action-bar {
+    padding: 0.5rem 0.65rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
   }
-  .fab-info { display: flex; align-items: center; gap: 0.3rem; }
-  .fab-badge { font-size: 0.74rem; padding: 0.25rem 0.5rem; }
-  .fab-actions { display: flex; align-items: center; gap: 0.35rem; }
-  .fab-actions .btn { padding: 0.45rem 0.75rem; font-size: 0.78rem; }
+  .floating-action-bar .fab-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+    width: 100%;
+    padding: 0;
+  }
+  .fab-info {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    flex-shrink: 0;
+  }
+  .fab-badge {
+    font-size: 0.74rem;
+    font-weight: 800;
+    padding: 0.35rem 0.55rem;
+    border-radius: 50px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .fab-badge-label {
+    display: none;
+  }
+  .fab-preview-names {
+    display: none;
+  }
+  .fab-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .btn-fab-clear {
+    padding: 0.38rem 0.55rem;
+    font-size: 0.74rem;
+    flex-shrink: 0;
+  }
+  .btn-fab-edit {
+    padding: 0.38rem 0.55rem;
+    font-size: 0.74rem;
+    flex-shrink: 0;
+  }
+  .btn-fab-send {
+    padding: 0.38rem 0.65rem;
+    font-size: 0.76rem;
+    flex: 1;
+    max-width: 155px;
+    justify-content: center;
+    white-space: nowrap;
+  }
 
   .float-wa {
-    bottom: 5.5rem; right: 1rem;
-    width: 46px; height: 46px; font-size: 1.3rem;
+    bottom: 4.8rem;
+    right: 0.85rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
   }
 
   /* Modal Mobile Optimization */

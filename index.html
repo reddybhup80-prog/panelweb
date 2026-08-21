@@ -530,14 +530,18 @@
   <div class="floating-action-bar" id="floatingActionBar">
     <div class="container fab-inner">
       <div class="fab-info">
-        <span class="fab-badge"><span id="fabCount">0</span> Brands Selected</span>
+        <span class="fab-badge"><i class="fas fa-check-circle"></i> <span id="fabCount">0</span><span class="fab-badge-label"> Selected</span></span>
         <span class="fab-preview-names" id="fabPreviewNames">No brands selected</span>
       </div>
       <div class="fab-actions">
-        <button class="btn btn-sm btn-secondary" id="fabClearBtn">Clear</button>
-        <a href="#inquiry" class="btn btn-sm btn-outline">Edit Form</a>
-        <button class="btn btn-sm btn-whatsapp" id="fabSendBtn">
-          <i class="fab fa-whatsapp"></i> Send on WhatsApp
+        <button class="btn btn-sm btn-secondary btn-fab-clear" id="fabClearBtn" title="Clear All">
+          <i class="fas fa-times"></i> <span class="btn-fab-text">Clear</span>
+        </button>
+        <a href="#inquiry" class="btn btn-sm btn-outline btn-fab-edit" title="Customize Request">
+          <i class="fas fa-edit"></i> <span class="btn-fab-text">Form</span>
+        </a>
+        <button class="btn btn-sm btn-whatsapp btn-fab-send" id="fabSendBtn">
+          <i class="fab fa-whatsapp"></i> <span class="fab-send-text">Send on WhatsApp</span>
         </button>
       </div>
     </div>
