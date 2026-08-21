@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== SITES & SELECTION STATE =====
   const sites = typeof getSites === 'function' ? getSites() : (typeof DEFAULT_SITES !== 'undefined' ? DEFAULT_SITES : []);
   let currentFilter = 'all';
-  let currentSort = 'name';
+  let currentSort = 'share-asc';
   let searchQuery = '';
 
   // Selected sites state
@@ -173,9 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (currentFilter === 'high') list = list.filter(s => s.share > 15);
 
     // Sort
-    if (currentSort === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
-    else if (currentSort === 'share-asc') list.sort((a, b) => a.share - b.share);
-    else if (currentSort === 'share-desc') list.sort((a, b) => b.share - a.share);
+    if (currentSort === 'share-asc') list.sort((a, b) => (a.share - b.share) || a.name.localeCompare(b.name));
+    else if (currentSort === 'share-desc') list.sort((a, b) => (b.share - a.share) || a.name.localeCompare(b.name));
+    else if (currentSort === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
 
     return list;
   }
