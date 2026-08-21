@@ -1199,7 +1199,7 @@ const DEFAULT_SITES = [
     "url": "http://lotusplays365.com/",
     "orig_share": 16.0,
     "share": 19,
-    "logo": "assets/brand_logos/lotusbet345.com.png",
+    "logo": "assets/brand_logos/lotusplays365.png",
     "id": 150
   },
   {
@@ -2126,7 +2126,7 @@ const DEFAULT_SITES = [
     "name": "LOTUSPLAYS365.COM (AGENT)",
     "url": "https://ag.lotusplays365.com",
     "share": 19,
-    "logo": "assets/brand_logos/lotusbet345.com.png",
+    "logo": "assets/brand_logos/lotusplays365.png",
     "isVip": true,
     "vipType": "VIP Agent Access",
     "id": 266
