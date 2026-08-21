@@ -634,5 +634,9 @@ ${customNotes}
   });
 
   // Initial render
+  const allBrandsFilterBtn = document.getElementById('allBrandsFilterBtn');
+  if (allBrandsFilterBtn && sites.length) {
+    allBrandsFilterBtn.textContent = `All Brands (${sites.length})`;
+  }
   updateUIState();
 });
