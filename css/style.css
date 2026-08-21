@@ -776,13 +776,41 @@ button, input, select, textarea { font-family: inherit; }
 }
 .vip-item-title-wrap {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+.vip-item-badge-row {
+  display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
+}
+.vip-share-badge {
+  background: rgba(255, 215, 0, 0.18);
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 0.74rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+}
+.vip-title-logo-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.vip-brand-logo-img {
+  height: 36px;
+  max-width: 110px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
 }
 .vip-item-title {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: #fff;
   letter-spacing: 0.5px;

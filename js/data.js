@@ -2135,7 +2135,7 @@ const DEFAULT_SITES = [
     "name": "SPORTPLAY99.WIN (ADMIN)",
     "url": "https://admin.sportplay99.win",
     "share": 19,
-    "logo": "assets/logo.png",
+    "logo": "assets/brand_logos/sportplay99.png",
     "isVip": true,
     "vipType": "VIP Admin Access",
     "id": 267
