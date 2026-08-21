@@ -1113,90 +1113,47 @@ button, input, select, textarea { font-family: inherit; }
   border-radius: 8px; cursor: pointer; outline: none;
 }
 
-/* ===== SCROLLABLE BRANDS PANEL & PROMINENT WIDE BRAND CARDS ===== */
-.sites-scroll-panel {
-  background: rgba(14, 16, 26, 0.78);
-  border: 1.5px solid rgba(255, 215, 0, 0.2);
-  border-radius: 20px;
-  backdrop-filter: blur(16px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-  position: relative;
-}
-
-.sites-scroll-header {
+/* ===== BRAND CATALOG SECTION (FULL-PAGE SCROLL & COMPACT SIZING) ===== */
+.sites-catalog-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.95rem 1.5rem;
-  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), rgba(18, 20, 32, 0.9));
-  border-bottom: 1px solid rgba(255, 215, 0, 0.18);
-  font-size: 0.88rem;
+  margin-bottom: 1.1rem;
+  padding: 0.65rem 1.1rem;
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 12px;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
-
-.sites-scroll-count {
+.sites-catalog-count {
   font-weight: 700;
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
 }
-.sites-scroll-count span {
+.sites-catalog-count span {
   color: var(--gold);
 }
 
-.sites-scroll-hint {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  opacity: 0.9;
-}
-
-.sites-scroll-body {
-  max-height: 680px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 1.35rem;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Custom Sleek Scrollbar */
-.sites-scroll-body::-webkit-scrollbar {
-  width: 9px;
-}
-.sites-scroll-body::-webkit-scrollbar-track {
-  background: rgba(10, 11, 18, 0.7);
-  border-radius: 8px;
-}
-.sites-scroll-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--gold-dark), var(--gold));
-  border-radius: 8px;
-  border: 2px solid rgba(10, 11, 18, 0.7);
-}
-.sites-scroll-body::-webkit-scrollbar-thumb:hover {
-  background: var(--gold);
-}
-
-/* Prominent Wide Grid */
+/* Compact Brand Catalog Grid (5-6 columns on desktop, 3-4 on tablet, 2 on mobile) */
 .sites-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.85rem;
+  width: 100%;
 }
 
-/* Full Brand Card */
+/* Compact Brand Card */
 .site-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1rem;
+  border-radius: 12px;
+  padding: 0.7rem;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.5rem;
   transition: all var(--transition);
   position: relative;
   overflow: hidden;
@@ -1210,16 +1167,16 @@ button, input, select, textarea { font-family: inherit; }
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 2.5px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
   opacity: 0;
   transition: opacity var(--transition);
 }
 
 .site-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: rgba(255, 215, 0, 0.45);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45), 0 0 18px rgba(255, 215, 0, 0.1);
 }
 .site-card:hover::before {
   opacity: 1;
@@ -1228,37 +1185,37 @@ button, input, select, textarea { font-family: inherit; }
 .site-card.selected {
   background: linear-gradient(145deg, rgba(255, 215, 0, 0.12), rgba(18, 19, 30, 0.96));
   border-color: var(--gold);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 30px rgba(255, 215, 0, 0.22);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.18);
 }
 .site-card.selected::before {
   opacity: 1;
 }
 
-/* Showcase Brand Logo Frame (Wider & Bigger) */
+/* Showcase Brand Logo Frame (Compact & Smaller) */
 .site-card-frame {
   position: relative;
   width: 100%;
-  height: 115px;
+  height: 76px;
   background: radial-gradient(circle at center, rgba(35, 28, 16, 0.95), rgba(10, 11, 18, 0.98));
-  border: 1.5px solid rgba(255, 215, 0, 0.22);
-  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem;
+  padding: 0.45rem;
   overflow: hidden;
-  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.7), 0 4px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.7);
   transition: all var(--transition);
 }
 
 .site-card:hover .site-card-frame {
-  border-color: rgba(255, 215, 0, 0.48);
-  box-shadow: inset 0 0 30px rgba(255, 215, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 215, 0, 0.45);
+  box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.08);
 }
 
 .site-card.selected .site-card-frame {
   border-color: var(--gold);
-  box-shadow: inset 0 0 35px rgba(255, 215, 0, 0.18), 0 0 20px rgba(255, 215, 0, 0.25);
+  box-shadow: inset 0 0 22px rgba(255, 215, 0, 0.15), 0 0 14px rgba(255, 215, 0, 0.2);
   background: radial-gradient(circle at center, rgba(45, 36, 18, 0.95), rgba(12, 13, 22, 0.98));
 }
 
@@ -1271,35 +1228,35 @@ button, input, select, textarea { font-family: inherit; }
 }
 
 .site-showcase-img {
-  max-width: 85%;
-  max-height: 75px;
+  max-width: 82%;
+  max-height: 48px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 8px rgba(255, 215, 0, 0.2));
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(255, 215, 0, 0.15));
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .site-card:hover .site-showcase-img {
-  transform: scale(1.08);
-  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 14px rgba(255, 215, 0, 0.4));
+  transform: scale(1.06);
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 8px rgba(255, 215, 0, 0.35));
 }
 
 /* Badges positioned over the frame */
 .site-select-badge {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 5px;
+  left: 5px;
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.74rem;
+  gap: 0.25rem;
+  font-size: 0.64rem;
   font-weight: 700;
   color: var(--text-muted);
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.2rem 0.55rem;
+  padding: 0.12rem 0.42rem;
   border-radius: 50px;
   z-index: 2;
   transition: all var(--transition);
@@ -1309,26 +1266,26 @@ button, input, select, textarea { font-family: inherit; }
   color: #111;
   background: var(--gold);
   border-color: var(--gold);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
 }
 .site-select-badge i {
-  font-size: 0.8rem;
+  font-size: 0.68rem;
 }
 
 .site-share-tag {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 5px;
+  right: 5px;
   background: rgba(255, 215, 0, 0.18);
   border: 1px solid rgba(255, 215, 0, 0.4);
   color: var(--gold);
   font-weight: 800;
-  font-size: 0.74rem;
-  padding: 0.2rem 0.55rem;
+  font-size: 0.65rem;
+  padding: 0.12rem 0.42rem;
   border-radius: 50px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   z-index: 2;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .site-card.selected .site-share-tag {
@@ -1339,20 +1296,23 @@ button, input, select, textarea { font-family: inherit; }
 .site-card-content {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.35rem;
   flex: 1;
 }
 
 .site-name {
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 0.85rem;
   word-break: break-all;
-  line-height: 1.3;
+  line-height: 1.25;
   color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .site-meta {
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
 }
 .site-meta strong {
@@ -1362,27 +1322,28 @@ button, input, select, textarea { font-family: inherit; }
 .site-card-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.35rem;
   margin-top: auto;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
 }
 
 .btn-toggle-select {
   flex: 1;
   justify-content: center;
-  font-size: 0.82rem;
-  padding: 0.55rem 0.8rem;
+  font-size: 0.74rem;
+  padding: 0.38rem 0.6rem;
+  border-radius: 8px;
 }
 
 .btn-visit {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   display: grid;
   place-items: center;
-  border-radius: 50%;
+  border-radius: 8px;
   flex-shrink: 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .no-results {
@@ -2163,8 +2124,8 @@ button, input, select, textarea { font-family: inherit; }
   .sort-wrap select { flex: 1; margin-left: 0.5rem; }
 
   .sites-grid {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
-    gap: 1.1rem;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 0.75rem;
   }
 
   .inquiry-section { padding: 3.5rem 0; }
@@ -2237,20 +2198,36 @@ button, input, select, textarea { font-family: inherit; }
     justify-content: center;
   }
 
-  .sites-scroll-panel {
-    border-radius: 14px;
-  }
-  .sites-scroll-header {
-    padding: 0.75rem 1rem;
-    font-size: 0.8rem;
-  }
-  .sites-scroll-body {
-    max-height: 500px;
-    padding: 0.85rem;
-  }
   .sites-grid {
-    grid-template-columns: 1fr;
-    gap: 0.85rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.55rem;
+  }
+  .site-card {
+    padding: 0.55rem;
+    gap: 0.4rem;
+    border-radius: 10px;
+  }
+  .site-card-frame {
+    height: 64px;
+    padding: 0.35rem;
+  }
+  .site-showcase-img {
+    max-height: 40px;
+  }
+  .site-name {
+    font-size: 0.76rem;
+  }
+  .site-meta {
+    font-size: 0.68rem;
+  }
+  .btn-toggle-select {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.68rem;
+  }
+  .btn-visit {
+    width: 26px;
+    height: 26px;
+    font-size: 0.68rem;
   }
   .form-row { grid-template-columns: 1fr; }
   .functions-grid { grid-template-columns: 1fr; }
